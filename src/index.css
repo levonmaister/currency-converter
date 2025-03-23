@@ -1,0 +1,51 @@
+/*
+TASK3: (5p)
+
+Here we are once again, with your favourite party animal - CSS. 
+
+Please, make this site look like it has been designed with love and care.
+Make new classess to the code where applicable and needed. 
+
+It's also okay to do inline styles.
+
+*/
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.flex-container {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.number-input input {
+  height: 32px;
+  width: 125px;
+}
+
+.calculate-button {
+  width: 100%;
+  height: 32px;
+}
+
+.result {
+  width: 125px;
+}
+
+.App {
+  text-align: center;
+}
