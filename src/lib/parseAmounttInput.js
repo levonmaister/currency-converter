@@ -3,7 +3,13 @@
  *
  * Varmista, että käyttäjä syöttää vain numeroita.
  * Käytä alert() -funktiota ilmoittaaksesi
- * virheellisesti syötetystä arvosta ja palauta 0.
+ * virheellisesti syötetystä arvosta ja palauta 0,
+ * jos syöte ei ole numero. Jos suote on tyhjä,
+ * voit palauttaa tyhjän stringin.
+ * 
+ * maybe_number_maybe_not saattaa olle stringi
+ * mutta funktion oletetaan palauttavan numero
+ * tai tyhjä string.
  *
  */
 

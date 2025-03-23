@@ -64,7 +64,7 @@ function Converter() {
           <div className="label">Value</div>
           <input
             type="text"
-            defaultValue={0}
+            value={amountInput}
             onChange={(ev) => setAmountInput(parseTextInput(ev.target.value))}
           ></input>
         </div>
@@ -79,6 +79,7 @@ function Converter() {
           onClick={async () => {
             handleCalculate(setResult, fromValue, toValue, amountInput);
           }}
+          disabled={!fromValue || !toValue || !amountInput}
         >
           Calculate
         </button>
