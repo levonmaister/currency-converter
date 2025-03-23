@@ -35,7 +35,7 @@ function Converter() {
     return (
       <div className="App">
         <h1>VJP Currency converter</h1>
-        <p>Loading...</p>
+        <p>Ladataan...</p>
       </div>
     );
   }

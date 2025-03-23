@@ -1,3 +1,5 @@
+/* Tähän tiedostoon ei tarvitse koskea */
+
 async function handleCurrencyResponse(setCurrencies) {
   try {
     const res = await fetch("https://currency-api.vjp.wtf/currencies");
