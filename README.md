@@ -26,11 +26,11 @@ Tarkemmat ohjeet ja kriteerit löytyvät A+:sta. Kommentit koodissa auttavat sin
 
 Lyhyesti:
 
-1. sanitoi input parseAmountInput.js -funktiossa 4p
-2. handleCalculate.js -funktio toimii oikein 9p
-3. tee sivustosta tyylikkäämpi 5p
-4. toteuta ja kutsu <AvailableCurrencies> komponenttia joka hakee rajapinnasta tiedot ja näyttää currencyt ja symbolit 10p
-5. Poista koodista debug kun et tarvitse sitä enää 2p
+1. sanitoi input parseAmountInput.js -funktiossa 10p
+2. handleCalculate.js -funktio toimii oikein 22p
+3. tee sivustosta tyylikkäämpi 13p
+4. toteuta ja kutsu <AvailableCurrencies> komponenttia joka hakee rajapinnasta tiedot ja näyttää currencyt ja symbolit 25p
+5. Poista koodista debug kun et tarvitse sitä enää 5p
 
 [A+ tehtävänanto](https://plus.cs.aalto.fi/cs-c1180/2025/module11/viikkotehtava/)
 

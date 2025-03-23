@@ -1,12 +1,12 @@
 /*
- * TASK2: (9p)
+ * Tehtävä 2: (22p)
  *
- * Formalize the handleCalculate() function to work properly.
+ * Formalisoi handleCalculate() -funktio toimimaan oikein.
  *
- * API documentation can be found form A+
+ * API dokumentaatio löytyy A+:sta: https://plus.cs.aalto.fi/cs-c1180/2025/module11/viikkotehtava/
  *
- * The function currently takes only setResult as a parameter,
- * but it would be useful to have more parameters in there..
+ * Funktio ottaa tällä hetkellä vain setResult -parametrin,
+ * mutta olisi hyödyllistä, jos se saisi myös muita parametreja..
  *
  */
 
@@ -19,7 +19,7 @@ async function handleCalculate(setResult) {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        // we're missing some information here..
+        // tästä puuttuu nyt jotain...
       }),
     });
 
@@ -35,23 +35,23 @@ async function handleCalculate(setResult) {
       );
     }
 
-    // parse the JSON
+    // JSON parsitaan tässä
     const data = await res.json();
     console.log(data);
 
     /*
-     * note that just like on the catch, we want to use setResult()
-     * to save the response instead of returning the function
+     *
+     * Vähän niinkuin catch, kohdassa, tässä halutaan käyttää
+     * setResult() -funktiota, jotta saadaan vastaus
+     * käyttäjälle.
      */
 
     setResult("Result!");
   } catch (error) {
-    // if (and when) the fetch fails, we end here and
+    // jos fetch ei onnistu, palautetaan -1
     console.log(error);
-    setTimeout(() => setResult(new Date().getSeconds()), 1000);
+    setTimeout(() => setResult(-1), 1000);
   }
-
-  // for now, we respond with current seconds.
 }
 
 export default handleCalculate;

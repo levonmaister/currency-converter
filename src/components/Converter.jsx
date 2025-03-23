@@ -1,35 +1,37 @@
 import { useEffect, useState } from "react";
 
-// we are using 'react-select' library to make using selections with react a bit smoother and easier
-// documentation here: https://react-select.com/
+// käytämme react-select -kirjastoa valintakenttien käyttämiseen
+// dokumentaatio täällä: https://react-select.com/
 import Select from "react-select";
 
-// take note that all of the functionality of the Converter has been isolated from the visualization
-// this is making the Converter a bit easier to read
-// also good naming convention is to tell what the function does instead of telling what it returns
+// huomioi, että kaikki Converterin toiminta on eristetty näkyvästä koodista
+// tämä tekee Converterin koodista helpommin luettavavaa
+// hyvä käytäntö on nimetä funktioita sen mukaan, mitä ne tekevät, eikä mitä ne palauttavat
 
 import handleCurrencyResponse from "../lib/handleCurrencyResponse";
 import handleCalculate from "../lib/handleCalculate";
 import parseTextInput from "../lib/parseAmounttInput";
 
 function Converter() {
-  // we save values to the Converter component's state with the useState functions
-  // hint: first three are the ones that you need to pass to the POST function
+  // käytämme useState -funktioita Converterin tilan säilyttämiseen
+  // vinkki: tarvitset ensimmäistä kolmea POST -funktiossasi
+
   const [fromValue, setFromValue] = useState();
   const [toValue, setToValue] = useState();
   const [amountInput, setAmountInput] = useState(0);
   const [result, setResult] = useState();
 
-  // useEffect function with [] gets triggered only on the initial render
-  // handleCurrencyResponse take the setCurrencies function as a parameter
-  // so when it's finished loading, it saves the currencies to the useState
+  // useEffect -funktio tyhjän [] taulukon kanssa suoritetaan vain ensimmäisellä renderöinnillä
+  // handleCurrencyResponse ottaa setCurrencies -funktion parametrina
+  // kun se on valmis, se tallentaa valuutat useState:iin
   const [currencies, setCurrencies] = useState([]);
   useEffect(() => {
     handleCurrencyResponse(setCurrencies);
   }, []);
 
   if (currencies.length === 0) {
-    // when waiting on currencies to load through api, let's show loading screen
+    // näytetään latausnäyttö, kun valuutat vielä latautuvat
+
     return (
       <div className="App">
         <h1>VJP Currency converter</h1>
@@ -38,7 +40,7 @@ function Converter() {
     );
   }
 
-  // on all other occasions let's show the actual calculator
+  // kaikissa muissa tapauksissa näytetään laskin
   return (
     <>
       <div className="flex-container">
@@ -82,13 +84,14 @@ function Converter() {
         </button>
       </div>
       {/*
-       * TASK5: (2p)
+       * Tehtävä 5: (5p)
        *
-       * Remove the debug screen before returning the assignment
+       * Viimeistele tehtävä poistamalla tämä debuggeri.
        *
-       * Here's a debug screen to show you the actual values.
-       * It might be helpful. Delete all traces of it when finished.
+       * Siitä saattaa olla hyötyä sinulle tehtävän ratkaisemisessa,
+       * mutta loppukäyttäjälle se ei ole tarpeen.
        *
+       * Poista siis debuggeri, kun olet valmis.
        */}
       <hr />
       <h2>Debug (remove when finished)</h2>

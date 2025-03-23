@@ -1,8 +1,9 @@
 /*
- * TASK1: (4p)
+ * Tehtävä 1: (10p)
  *
- * Make sure that the user inputs only numbers
- * Use alert() to indicate malfunctioned user input and return 0 in that case
+ * Varmista, että käyttäjä syöttää vain numeroita.
+ * Käytä alert() -funktiota ilmoittaaksesi
+ * virheellisesti syötetystä arvosta ja palauta 0.
  *
  */
 

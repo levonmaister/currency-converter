@@ -1,25 +1,20 @@
 /*
-TASK4: (10p)
+Tehtävä 4: (25p)
 
-Now it's time to utilize all your learnings and do some independent work!
+Nyt on aika käyttää kaikkea oppimasi ja tehdä jotain vähän itsenäisemmin!
 
-Create a component that gets all the currencies and symbols from the API
-and renders them. It's also wise, but not mandatory to do 
-ListComponent and ItemComponent separately if needed. You can create
-it on a separate file.
+Tee komponentti, joka hakee kaikki valuutat ja symbolit API:sta ja renderöi ne.
+On myös ihan fiksua, mutta ei pakollista tehdä erilliset ListComponent ja ItemComponent.
+Voit myös luoda niille kokonaan uudet tiedostot.
 
-Feel free to use any display format that you would like. 
-However we recommend to use some kind of tabular format. 
-Maybe even CSS grid? However flexbox is more than enought
-to present the data. 
+Saat itse päättää, miten haluat näyttää komponentit, mutta tässä ehkä kannattaisi käyttää
+jotakin taulukkohenkistä formaattia. Ehkä jopa CSS gridiä? Flexbox toimii myös hyvin.
 
-Put CSS in use and remember "className" instead of "class"!
-You can also do inline-css here if you want.
+Käytä ihmeessä myös CSS:ää ja muista "className" "class"in sijasta. Inline-CSS on myös OK
 
-Take note how we're utilizing API on other components. Blatant
-copy-paste would be almost enough if you know what you're doing. 
+Hyvä vinkki on katsoa mallia, miten kutsumme APIa toisissa komponenteissa. 
 
-Remember to ask help if you get stuck!
+Muista kysellä apua, jos jäät jumiin!
 
 */
 
