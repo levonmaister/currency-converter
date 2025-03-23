@@ -33,6 +33,7 @@ async function handleCalculate(setResult) {
           status +
           ". Maybe it's a good idea to open inspector's network tab. 🧙🏼‍♂️"
       );
+      throw new Error("Status is not 200");
     }
 
     // JSON parsitaan tässä
