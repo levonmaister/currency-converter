@@ -5,7 +5,7 @@
  *
  * API dokumentaatio löytyy A+:sta: https://plus.cs.aalto.fi/cs-c1180/2025/module11/viikkotehtava/
  *
- * Funktio ottaa tällä hetkellä vain setResult -parametrin,
+ * Funktio ottaa tällä hetkellä vain setResult funktion parametrinä,
  * mutta olisi hyödyllistä, jos se saisi myös muita parametreja..
  *
  */
