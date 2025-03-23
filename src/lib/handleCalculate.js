@@ -1,7 +1,7 @@
 /*
  * Tehtävä 2: (22p)
  *
- * Formalisoi handleCalculate() -funktio toimimaan oikein.
+ * Laita handleCalculate() -funktio toimimaan oikein.
  *
  * API dokumentaatio löytyy A+:sta: https://plus.cs.aalto.fi/cs-c1180/2025/module11/viikkotehtava/
  *
