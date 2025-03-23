@@ -45,6 +45,12 @@ async function handleCalculate(setResult) {
      * Vähän niinkuin catch, kohdassa, tässä halutaan käyttää
      * setResult() -funktiota, jotta saadaan vastaus
      * käyttäjälle.
+     *
+     * Parhaiten pääset jyvälle, mitä datasta pitää palauttaa,
+     * kun katsot console.log:ia, tai sit ihan sitä API:n dokumentaatiota.
+     *
+     * On tilanteita jossa API antaa kosmisen määrän desimaaleja.
+     * Pyöristä ne kahden desimaalin tarkkuuteen.
      */
 
     setResult("Result!");
