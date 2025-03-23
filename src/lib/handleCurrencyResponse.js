@@ -1,11 +1,11 @@
 async function handleCurrencyResponse(setCurrencies) {
   try {
-    const response = await fetch("https://currency-api.vjp.wtf/currencies");
+    const res = await fetch("https://currency-api.vjp.wtf/currencies");
 
-    if (!response.ok) {
-      throw new Error(`HTTP virhe! status: ${response.status}`);
+    if (!res.ok) {
+      throw new Error(`HTTP virhe! status: ${res.status}`);
     }
-    const data = await response.json();
+    const data = await res.json();
     const rawCurrencies = data.currencies;
     
     const parsedCurrencies = rawCurrencies.map((cur) => {
