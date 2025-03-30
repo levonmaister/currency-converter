@@ -18,6 +18,33 @@ Muista kysellä apua, jos jäät jumiin!
 
 */
 
-const AvailableCurrenciesList = () => {
-  return <div></div>;
+import React, { useEffect, useState } from "react";
+import handleCurrencyResponse2 from "../lib/handleCurrencyResponse2";
+
+
+
+
+ function AvailableCurrenciesList () {
+
+  const [currencies, setCurrencies] = useState([]);
+
+  useEffect(() => {
+    handleCurrencyResponse2(setCurrencies);
+  }, []);
+
+  return (
+    <div>
+    <div  className="list" >
+      {currencies.map((valuta) => (
+        <div key ={valuta.symbol} className="list-item">
+          <div className="currency">{valuta.symbol}</div>
+          <div className="currency">{valuta.value}</div>
+        </div>
+      ))}
+    </div>
+    </div>
+  );
 };
+
+
+export default AvailableCurrenciesList;

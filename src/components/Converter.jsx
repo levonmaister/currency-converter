@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 // käytämme react-select -kirjastoa valintakenttien käyttämiseen
 // dokumentaatio täällä: https://react-select.com/
 import Select from "react-select";
@@ -11,6 +12,8 @@ import Select from "react-select";
 import handleCurrencyResponse from "../lib/handleCurrencyResponse";
 import handleCalculate from "../lib/handleCalculate";
 import parseTextInput from "../lib/parseAmounttInput";
+
+
 
 function Converter() {
   // käytämme useState -funktioita Converterin tilan säilyttämiseen
@@ -83,27 +86,12 @@ function Converter() {
         >
           Calculate
         </button>
+       
+       
       </div>
-      {/*
-       * Tehtävä 5: (5p)
-       *
-       * Viimeistele tehtävä poistamalla tämä debuggeri.
-       *
-       * Siitä saattaa olla hyötyä sinulle tehtävän ratkaisemisessa,
-       * mutta loppukäyttäjälle se ei ole tarpeen.
-       *
-       * Poista siis debuggeri, kun olet valmis.
-       */}
-      <hr />
-      <h2>Debug (remove when finished)</h2>
-      <br />
-      fromDropdown: {JSON.stringify(fromValue)}
-      <br />
-      toDropdown: {JSON.stringify(toValue)}
-      <br />
-      amountInput: {amountInput}
-      <br />
-      result: {result}
+
+
+     
     </>
   );
 }

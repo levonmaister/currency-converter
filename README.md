@@ -3,20 +3,29 @@
 ## Omat tiedot tähän
 
 ### Nimi
-
+Levon Lopez-Eknosyan
 ### Opiskelijanumero
-
+101755869
 ### Mitkä asiat teit
 
 Teitkö jotain puutteellisesti? Mitä jätit tekemättä?
 
+Jag gjorde allting som stod i instruktionerna. Stylandet av VJP currency convertern gjorde jag lite halvfärdigt. Ändrade ändast färgen på Calculate knappen. Och AvailableCurrency har inte heller någon komplicerad styling vid sidan om att de är centrerade i mitten med flexbox samt en bold style. 
+
+
 ### Mikä tehtävässä oli haastavaa?
 
+Allting var ganska lätt egentligen, försökte få chakraUI att fungera men gav opp efter en halvtimme för den ville inte fungera. Sedan försökte jag göra någonting med Aria men det blev inte heller till någonting så till slut använde jag mig bara av vanlig css.
+
 ### Mitä opit?
+
+Lite grann om ChakraUI, fick det dock inte att fungera.
 
 ### Paljonko käytit tunteja kierrokseen?
 
 Arvio tunnin tarkkuudella riittää.
+
+2h
 
 ## Tehtävänanto
 

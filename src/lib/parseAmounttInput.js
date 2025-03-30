@@ -13,7 +13,19 @@
  *
  */
 
+
 function parseAmountInput(maybe_number_maybe_not) {
+
+  if (maybe_number_maybe_not == "") {
+    return "";
+  }
+  
+  if (isNaN(maybe_number_maybe_not)) {
+    alert("Enter number");
+    return 0;
+  }
+
+
   return maybe_number_maybe_not;
 }
 

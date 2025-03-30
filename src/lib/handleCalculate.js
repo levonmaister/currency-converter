@@ -10,7 +10,12 @@
  *
  */
 
-async function handleCalculate(setResult) {
+
+
+async function handleCalculate(setResult, fromValue, toValue, amountInput) {
+
+  console.log("Handle Calculate: ", fromValue, toValue, amountInput);
+
   try {
     const res = await fetch("https://currency-api.vjp.wtf/convert", {
       method: "POST",
@@ -19,7 +24,9 @@ async function handleCalculate(setResult) {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        // tästä puuttuu nyt jotain...
+        from: fromValue.value,
+        to: toValue.value,
+        amount: amountInput,
       }),
     });
 
@@ -53,7 +60,7 @@ async function handleCalculate(setResult) {
      * Pyöristä ne kahden desimaalin tarkkuuteen.
      */
 
-    setResult("Result!");
+    setResult(data.to.amount);
   } catch (error) {
     // jos fetch ei onnistu, palautetaan -1
     console.log(error);
