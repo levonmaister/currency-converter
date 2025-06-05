@@ -9,6 +9,12 @@ function App() {
 
       <Converter />
       <AvailableCurrencies />
+
+      <div>
+        <h1>
+          added document to the project
+        </h1>
+      </div>
     </div>
   );
 }
