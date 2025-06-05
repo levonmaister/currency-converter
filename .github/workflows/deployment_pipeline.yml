@@ -1,0 +1,26 @@
+name: Deployment Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+
+jobs:
+
+  simple_deployment_pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: check Style
+      run: npm run lint
+    
+    - name: Build project
+      run: npm run build
+    
+    - name: Trigger render deployment
+      if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ' '), '#skip') }}
+      run: curl https://api.render.com/deploy/srv-${{ secrets.RENDER_SERVICE_ID }}?key=${{ secrets.RENDER_API_KEY }}
+    

@@ -1,5 +1,0 @@
-services:
-  vite-currency-converter:
-    image: levonmaister/currency-converter:latest
-    ports:
-      - 3001:3001
