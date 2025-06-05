@@ -17,8 +17,7 @@ function App() {
       </div>
 
       <div>
-        <p>Added div</p>
-        <p>Pull request p</p>
+      final pull request for mluukkai
       </div>
     </div>
   );
