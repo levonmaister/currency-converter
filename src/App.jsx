@@ -15,6 +15,10 @@ function App() {
           added document to the project
         </h1>
       </div>
+
+      <div>
+        <p>Added div</p>
+      </div>
     </div>
   );
 }
